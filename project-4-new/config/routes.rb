@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
 get '/users' => "users#show", as: "user"
 
+get '/admins' => "admins#show", as: "admin"
+
 root to: "home#index"
 
 end

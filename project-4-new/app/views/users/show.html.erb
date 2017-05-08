@@ -1,1 +1,31 @@
-<h1><%= @name %></h1>
+<nav class="navbar">
+  <div class="navbar-title-container">
+    <div class="navbar-title"><%= @title %></div>
+    <div class="navbar-subtitle"><%= @subtitle %></div>
+  </div>
+</nav>
+
+<h1><%= @sitename %></h1>
+
+<h1></h1>
+
+<!-- <body>
+
+</body>
+</html>
+
+    <div class="searchForm">
+
+      .container.content-xs -->
+
+<%= form_for @user do |f| %>
+  <%= f.label :first_name %>:
+  <%= f.text_field :first_name %><br />
+
+  <%= f.label :last_name %>:
+  <%= f.text_field :last_name %><br />
+
+  <%= f.submit %>
+<% end %>
+
+<footer>Thank you for using <%= @sitename %></footer>

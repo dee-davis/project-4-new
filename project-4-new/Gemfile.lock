@@ -60,6 +60,8 @@ GEM
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.18)
+    friendly_id (5.1.0)
+      activerecord (>= 4.0.0)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     i18n (0.8.1)
@@ -86,6 +88,7 @@ GEM
     mini_portile2 (2.1.0)
     minitest (5.10.1)
     multi_json (1.12.1)
+    nameable (1.1.1)
     nio4r (2.0.0)
     nokogiri (1.7.1)
       mini_portile2 (~> 2.1.0)
@@ -172,10 +175,12 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   devise
+  friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
   materialize-sass
+  nameable
   pg (~> 0.18)
   puma (~> 3.0)
   rails (~> 5.0.2)

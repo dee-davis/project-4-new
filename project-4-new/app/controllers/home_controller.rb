@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @title = 'Howdy'
+    @title = 'Career Connect'
+    @subtitle = 'Your Career Search Page'
   end
 end
