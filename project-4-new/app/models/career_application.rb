@@ -2,5 +2,6 @@ class CareerApplications < ApplicationRecord
   belongs_to :user
   belongs_to :career
 
-  validates :description, length: {in: 10..1000}
+  validates :description, length: {within: 10..500}
+  validates :content, presence: true
 end
