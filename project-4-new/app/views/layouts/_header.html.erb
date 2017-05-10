@@ -1,21 +1,27 @@
 <nav class="navbar">
   <div class="navbar-title-container">
 <!-- New -->
-<a href="#" class="brand-logo"></a>
-<ul id="nav-mobile" class="right">
+<a href="#!" class="brand-logo"></a>
+<ul class="nav-mobile" class="right">
   <li><a href="sass.html"></a></li>
   <li><a href="badges.html"></a></li>
   <li><a href="collapsible.html"></a></li>
+  <li><a href="https://www.linkedin.com" class=btn target="_blank">LinkedIn</a></li>
 </ul>
 
     <div class="navbar-title"><%= @title %></div>
     <div class="navbar-subtitle"><%= @subtitle %></div>
   </div>
-<!-- </nav> -->
+<!-- Old nav tag ended here -->
 <!-- new -->
-<div class="right">
+<div class="navbar-right">
+
+  
+  <%= link_to "Edit User", edit_user_registration_path, class: "btn btn-default navbar-btn" %>
+
   <%= link_to "Sign Up", new_user_registration_url, class: "btn btn-default navbar-btn" %>
   <%= link_to "Sign In", new_user_session_path, class: "btn btn-default navbar-btn"%>
+
 </div>
 </nav>
 
