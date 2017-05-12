@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
   def show
     @title = 'Career Connect'
-    @subtitle = 'Your Career Search Page'
+    @subtitle = 'Your Career Post Page'
     @sitename = ''
     @user = ''
   end
