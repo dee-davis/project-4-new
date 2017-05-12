@@ -1,6 +1,22 @@
 <h1>Editing Career</h1>
 
-<%= render 'form', career: @career %>
+<%= form_for @career do |f| %>
+  <div class="input-field col s12", textarea id="textarea1" class="materialize-textarea"></textarea>
+    <div>
+    <%= f.label "Title" %><br>
+    <%= f.text_field :title %>
+  </div>
+    <br>
+    <br>
+    <div>
+    <%= f.text_area :content, placeholder: 'Content' %>
+  </div>
+  </div>
+  <div class="actions">
+    <%= f.submit "Update Career", class: '' %>
+  </div>
+<% end %>
+</div>
 
 <%= link_to 'Show', @career %> |
 <%= link_to 'Back', careers_path %>
