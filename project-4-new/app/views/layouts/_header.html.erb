@@ -6,7 +6,7 @@
   <li><a href="sass.html"></a></li>
   <li><a href="badges.html"></a></li>
   <li><a href="collapsible.html"></a></li>
-  <li><a href="https://www.linkedin.com" class=btn target="_blank">LinkedIn &raquo;</a></li>
+  <!-- <li><a href="" class=btn target="_blank"></a></li> -->
 </ul>
 
     <div class="navbar-title"><%= @title %></div>
@@ -25,6 +25,8 @@
   <%= link_to "Sign In", new_user_session_path, class: "btn btn-default navbar-btn" %>
 
   <%= link_to "New Career", new_career_path, class: "btn btn-default navbar-btn" %>
+
+<%= link_to "Home", user_path, class: "btn btn-default navbar-btn" %>
 
 </div>
 </nav>
