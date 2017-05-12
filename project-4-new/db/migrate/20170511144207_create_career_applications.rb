@@ -6,6 +6,6 @@ class CreateCareerApplications < ActiveRecord::Migration[5.0]
 
           t.timestamps
         end
-        add_index :users, :slug, unique: true
+
   end
 end

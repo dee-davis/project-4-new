@@ -1,5 +1,6 @@
 class Career < ApplicationRecord
   extend FriendlyId
+  friendly_id :title
 
   belongs_to :admin
   has_many :career_applications

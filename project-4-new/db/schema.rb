@@ -10,17 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170511170645) do
+ActiveRecord::Schema.define(version: 20170511230534) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "career_applications", force: :cascade do |t|
+    t.string   "name"
+    t.string   "slug"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
     t.integer  "career_id"
     t.integer  "user_id"
     t.string   "title"
-    t.datetime "updated_at"
-    t.datetime "created_at"
     t.string   "company_name"
     t.string   "city"
     t.string   "state"
@@ -29,17 +31,15 @@ ActiveRecord::Schema.define(version: 20170511170645) do
   end
 
   create_table "careers", force: :cascade do |t|
-    t.integer  "career_id"
-    t.integer  "user_id"
-    t.string   "title"
-    t.string   "category"
-    t.datetime "updated_at"
-    t.datetime "created_at"
-    t.string   "company_name"
-    t.string   "website"
-    t.text     "content"
-    t.string   "city"
-    t.string   "state"
+    t.integer "career_id"
+    t.integer "user_id"
+    t.string  "title"
+    t.string  "category"
+    t.string  "company_name"
+    t.string  "website"
+    t.text    "content"
+    t.string  "city"
+    t.string  "state"
   end
 
   create_table "friendly_id_slugs", force: :cascade do |t|

@@ -1,20 +1,29 @@
-Post data to this example card
+<p id="notice"><%= notice %></p>
+
+
+
+
+
+
 <li><div class="row", class="flex-item">1</li>
-  <div class="col s12 m6">
-    <div class="card blue-grey darken-1">
-      <div class="card-content white-text">
-        <span class="card-title">Card Title</span>
-        <span class="card-title">Card Title</span>
-        <p>Card Title</p>
-        <p>Card Title</p>
-        <p>Card Title</p>
+  <div class="col s12 m6 container">
+<h1>Careers</h1>
+        <% @careers.each do |career|%>
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title"><%= career.title %></span>
         <p>I am a very simple card. I am good at containing small bits of information.
         I am convenient because I require little markup to use effectively. Let's see how many characters this card can hold.  I will keep typing. This message will self-destruct.</p>
       </div>
       <div class="card-action">
-        <a href="#">This is a link</a>
-        <a href="#">This is a link</a>
+        <a><%= link_to 'Show', career %></a>
+        <a><%= link_to 'Edit', edit_career_path(career) %></a>
+        <a><%= link_to 'Destroy', career, method: :delete, data: { confirm: 'Are you sure?' } %></a>
       </div>
     </div>
+        <% end %>
+        <%= link_to 'New Career', new_career_path %>
+
   </div>
+
 </div>
