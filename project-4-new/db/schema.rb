@@ -16,13 +16,11 @@ ActiveRecord::Schema.define(version: 20170511230534) do
   enable_extension "plpgsql"
 
   create_table "career_applications", force: :cascade do |t|
-    t.string   "name"
-    t.string   "slug"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
     t.integer  "career_id"
     t.integer  "user_id"
     t.string   "title"
+    t.datetime "updated_at"
+    t.datetime "created_at"
     t.string   "company_name"
     t.string   "city"
     t.string   "state"
@@ -31,15 +29,17 @@ ActiveRecord::Schema.define(version: 20170511230534) do
   end
 
   create_table "careers", force: :cascade do |t|
-    t.integer "career_id"
-    t.integer "user_id"
-    t.string  "title"
-    t.string  "category"
-    t.string  "company_name"
-    t.string  "website"
-    t.text    "content"
-    t.string  "city"
-    t.string  "state"
+    t.integer  "career_id"
+    t.integer  "user_id"
+    t.string   "title"
+    t.string   "category"
+    t.datetime "updated_at"
+    t.datetime "created_at"
+    t.string   "company_name"
+    t.string   "website"
+    t.text     "content"
+    t.string   "city"
+    t.string   "state"
   end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
@@ -69,6 +69,13 @@ ActiveRecord::Schema.define(version: 20170511230534) do
     t.datetime "last_sign_in_at"
     t.inet     "current_sign_in_ip"
     t.inet     "last_sign_in_ip"
+    t.string   "title"
+    t.string   "category"
+    t.string   "company_name"
+    t.string   "website"
+    t.text     "content"
+    t.string   "city"
+    t.string   "state"
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
     t.index ["slug"], name: "index_users_on_slug", unique: true, using: :btree

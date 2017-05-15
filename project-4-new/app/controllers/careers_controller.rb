@@ -76,6 +76,6 @@ class CareersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def career_params
-      params.require(:career).permit(:title, :content)
+      params.require(:career).permit(:title, :content, :city)
     end
 end
