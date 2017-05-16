@@ -8,3 +8,11 @@
 
 # Career.destroy_all
 # User.destroy_all
+
+10.times do
+  Career.create(
+  title: Faker::Name.name,
+  city: Faker::Address.city,
+  content: Faker::Company.bs
+  )
+end
