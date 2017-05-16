@@ -4,7 +4,7 @@ class CareersController < ApplicationController
   # GET /careers
   # GET /careers.json
   def index
-    @careers = Career.all
+    @careers = Career.all.reverse
   end
 
   # GET /careers/1

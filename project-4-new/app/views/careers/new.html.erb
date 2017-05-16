@@ -22,11 +22,12 @@
     <br>
     <div>
     <%= f.text_area :content, placeholder: 'Content' %>
+    <div class="actions">
+      <%= f.submit "Create Career", class: "btn btn-default" %>
+    </div>
   </div>
   </div>
-  <div class="actions">
-    <%= f.submit "Create Career", class: "btn btn-default" %>
-  </div>
+
 <% end %>
 </div>
 <script>
