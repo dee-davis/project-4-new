@@ -10,7 +10,7 @@ Users can post Careers to share with other Job Seekers.
 Initial Requirements: https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/projects/unit_04
 
 ##Deployment
-[Heroku Link] (https://https://career-connect.herokuapp.com/careers)
+[Heroku Link] (https://(https://career-connect.herokuapp.com/)
 
 GitHub Repo: https://github.com/health4zoe
 
